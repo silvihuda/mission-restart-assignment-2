@@ -1,0 +1,110 @@
+[
+  {
+    "id": "#1001",
+    "title": "Login page not loading",
+    "description": "Users are unable to access the login page on mobile devices.",
+    "customer": "John Doe",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "09-03-2026"
+  },
+  {
+    "id": "#1002",
+    "title": "Error 500 on checkout",
+    "description": "Server throws a 500 error when users try to complete checkout.",
+    "customer": "Jane Smith",
+    "priority": "HIGH PRIORITY",
+    "status": "In-Progress",
+    "createdAt": "08-03-2026"
+  },
+  {
+    "id": "#1003",
+    "title": "Password reset email not received",
+    "description": "Some users report not receiving the password reset email.",
+    "customer": "Alice Johnson",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Open",
+    "createdAt": "07-03-2026"
+  },
+  {
+    "id": "#1004",
+    "title": "UI misalignment on dashboard",
+    "description": "Widgets on dashboard overlap on smaller screens.",
+    "customer": "Bob Lee",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Open",
+    "createdAt": "06-03-2026"
+  },
+  {
+    "id": "#1005",
+    "title": "Slow page loading",
+    "description": "Homepage is taking longer than 5 seconds to load for some users.",
+    "customer": "Catherine Wong",
+    "priority": "MEDIUM PRIORITY",
+    "status": "In-Progress",
+    "createdAt": "05-03-2026"
+  },
+  {
+    "id": "#1006",
+    "title": "Notifications not appearing",
+    "description": "Push notifications are not showing on Android devices.",
+    "customer": "Daniel Kim",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "04-03-2026"
+  },
+  {
+    "id": "#1007",
+    "title": "Broken link in FAQ",
+    "description": "The link to 'Contact Support' in the FAQ page is broken.",
+    "customer": "Emily Davis",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Open",
+    "createdAt": "03-03-2026"
+  },
+  {
+    "id": "#1008",
+    "title": "Error on file upload",
+    "description": "Users get a timeout error when uploading large files.",
+    "customer": "Frank Miller",
+    "priority": "HIGH PRIORITY",
+    "status": "In-Progress",
+    "createdAt": "02-03-2026"
+  },
+  {
+    "id": "#1009",
+    "title": "Missing translations in Spanish",
+    "description": "Some labels on the settings page are not translated to Spanish.",
+    "customer": "Gabriela Martinez",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Open",
+    "createdAt": "01-03-2026"
+  },
+  {
+    "id": "#1010",
+    "title": "App crashes on logout",
+    "description": "Mobile app crashes when users try to logout from iOS devices.",
+    "customer": "Henry Clark",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "28-02-2026"
+  },
+  {
+    "id": "#1011",
+    "title": "Incorrect total in cart",
+    "description": "Cart total sometimes shows the wrong amount after discount applied.",
+    "customer": "Irene Lopez",
+    "priority": "HIGH PRIORITY",
+    "status": "In-Progress",
+    "createdAt": "27-02-2026"
+  },
+  {
+    "id": "#1012",
+    "title": "Search bar not working",
+    "description": "Typing keywords in search bar returns no results even if products exist.",
+    "customer": "Jack Wilson",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Open",
+    "createdAt": "26-02-2026"
+  }
+]
