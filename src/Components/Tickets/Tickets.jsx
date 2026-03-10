@@ -1,15 +1,18 @@
+import TaskStatus from '../TaskStatus/TaskStatus';
 import TicketsCards from '../TicketsCards/TicketsCards';
 
     
-const Tickets = ({promiseTickets}) => {
+const Tickets = ({promiseTickets,clickedCards,setClickedCards}) => {
     
     return (
        <div className='max-w-[1280px] mx-auto'>
-         <div className='flex justify-between grow mt-6'>
+         <div className='flex justify-between lg:gap-4 mt-6'>
          
-             <TicketsCards promiseTickets={promiseTickets}></TicketsCards>
+             <TicketsCards promiseTickets={promiseTickets}
+             clickedCards={clickedCards}
+             setClickedCards={setClickedCards}></TicketsCards>
              <div>
-                task
+                <TaskStatus clickedCards={clickedCards}></TaskStatus>
              </div>
           
         </div>

@@ -1,5 +1,5 @@
 
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Banner from './Components/Banner/Banner'
 import Navbar from './Components/Navbar/Navbar'
@@ -11,6 +11,7 @@ const fetchPromise = async() =>{
 const promiseTickets = fetchPromise();
 
 function App() {
+  const [clickedCards,setClickedCards] = useState([])
  
   return (
     <>
@@ -18,7 +19,9 @@ function App() {
       <Banner></Banner>
       
        <Suspense>
-        <Tickets promiseTickets={promiseTickets}></Tickets>
+        <Tickets promiseTickets={promiseTickets}
+        clickedCards={clickedCards}
+        setClickedCards={setClickedCards}></Tickets>
        </Suspense>
       
     </>

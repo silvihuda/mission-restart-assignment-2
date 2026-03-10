@@ -1,6 +1,9 @@
 import React from 'react';
 
-const TicketsCard = ({ticket}) => {
+const TicketsCard = ({ticket,clickedCards,setClickedCards}) => {
+    const handleClickedCard = () =>{
+        setClickedCards([...clickedCards,ticket])
+    }
 // {
 //     "id": "#1011",
 //     "title": "Incorrect total in cart",
@@ -12,7 +15,7 @@ const TicketsCard = ({ticket}) => {
 //   },
     return (
         <div className=''>
-             <div className="card w-full  bg-slate-50">
+             <div onClick={handleClickedCard} className="card w-full  bg-slate-50">
                     <div className="card-body space-y-4">
                         <div className='flex justify-between'>
                             <h1 className="card-title">{ticket.title}</h1>
