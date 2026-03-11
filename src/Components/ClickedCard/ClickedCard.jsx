@@ -1,14 +1,18 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
-const ClickedCard = ({card}) => {
+const ClickedCard = ({ card }) => {
+    const handleCompleteButton = () => {
+          toast('Task of this ticket is done')
+    }
     return (
         <div className='lg:mt-6 mt-2'>
-            <div className="card card-border bg-slate-50 w-full h-full mt-2 px-2 space-y-2">
+            <div className="card card-border bg-slate-50 w-full mt-2  space-y-2">
                 <div className="card-body">
-                    <h1 className="card-title text-xl">{card.title}</h1>
+                    <h1 className="card-title truncate text-xl">{card.title}</h1>
 
                     <div className="card-actions">
-                        <button className='btn w-full bg-green-600'>Complete</button>
+                        <button onClick={handleCompleteButton} className='btn w-full bg-green-600 rounded-xl text-white'>Complete</button>
                     </div>
                 </div>
             </div>

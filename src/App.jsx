@@ -1,5 +1,6 @@
 
 import { Suspense, useState } from 'react'
+import { ToastContainer } from 'react-toastify'
 import './App.css'
 import Banner from './Components/Banner/Banner'
 import Navbar from './Components/Navbar/Navbar'
@@ -16,14 +17,14 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      <Banner></Banner>
+      <Banner clickedCards={clickedCards}></Banner>
       
        <Suspense>
         <Tickets promiseTickets={promiseTickets}
         clickedCards={clickedCards}
         setClickedCards={setClickedCards}></Tickets>
        </Suspense>
-      
+      <ToastContainer />
     </>
   )
 }
