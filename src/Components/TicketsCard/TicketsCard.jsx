@@ -1,7 +1,7 @@
 import React from 'react';
 import { toast } from 'react-toastify';
 
-const TicketsCard = ({ticket,clickedCards,setClickedCards}) => {
+const TicketsCard = ({ticket,clickedCards,setClickedCards, removedCard}) => {
     const handleClickedCard = () =>{
         setClickedCards([...clickedCards,ticket])
         toast('This card is in progress')

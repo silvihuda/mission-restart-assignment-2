@@ -2,7 +2,7 @@ import TaskStatus from '../TaskStatus/TaskStatus';
 import TicketsCards from '../TicketsCards/TicketsCards';
 
     
-const Tickets = ({promiseTickets,clickedCards,setClickedCards}) => {
+const Tickets = ({promiseTickets,clickedCards,setClickedCards,removedCard }) => {
     
     return (
        <div className='max-w-[1280px] mx-auto'>
@@ -10,9 +10,11 @@ const Tickets = ({promiseTickets,clickedCards,setClickedCards}) => {
          
              <TicketsCards promiseTickets={promiseTickets}
              clickedCards={clickedCards}
-             setClickedCards={setClickedCards}></TicketsCards>
+             setClickedCards={setClickedCards}
+             removedCard={removedCard}></TicketsCards>
              <div>
-                <TaskStatus clickedCards={clickedCards}></TaskStatus>
+                <TaskStatus clickedCards={clickedCards}
+                removedCard ={removedCard }></TaskStatus>
              </div>
           
         </div>
