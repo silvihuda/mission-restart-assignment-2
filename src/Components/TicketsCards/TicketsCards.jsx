@@ -1,7 +1,7 @@
 import React, { use } from 'react';
 import TicketsCard from '../TicketsCard/TicketsCard';
 
-const TicketsCards = ({promiseTickets,clickedCards,setClickedCards,removedCard}) => {
+const TicketsCards = ({promiseTickets,clickedCards,setClickedCards}) => {
     const ticketsData = use(promiseTickets);
     // console.log(ticketsData)
     return (
@@ -13,8 +13,7 @@ const TicketsCards = ({promiseTickets,clickedCards,setClickedCards,removedCard})
                <TicketsCard key={ticket.id}
                ticket={ticket}
                clickedCards={clickedCards}
-               setClickedCards={setClickedCards}
-               removedCard={removedCard}></TicketsCard>)}
+               setClickedCards={setClickedCards}></TicketsCard>)}
             </div>
         </div>
     );

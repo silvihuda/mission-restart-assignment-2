@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 
 const ClickedCard = ({ card,removedCard  }) => {
     const handleCompleteButton = () => {
-          toast('Task of this ticket is done')
+          toast('This ticket is resolved')
           removedCard(card)
         
     }

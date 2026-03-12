@@ -1,6 +1,6 @@
 import React from 'react';
 import card1Image from '../../assets/vector1.png'
-const Banner = ({ clickedCards, resolvedTask }) => {
+const Banner = ({ clickedCards, resolvedTasks }) => {
     return (
         <div className='max-w-[1280px] mx-auto grid grid-cols-1 gap-2 lg:grid-cols-2 lg:gap-6'>
             <div className="card  bg-gradient-to-r from-[#422AD5] to-blue-400 image-full"
@@ -23,7 +23,7 @@ const Banner = ({ clickedCards, resolvedTask }) => {
                 </figure>
                 <div className="card-body text-center justify-center items-center">
                     <h1 className='text-3xl'>Resolved</h1>
-                    <span className='text-2xl'>{ resolvedTask.length}</span>
+                    <span className='text-2xl'>{ resolvedTasks.length}</span>
                 </div>
             </div>
         </div>

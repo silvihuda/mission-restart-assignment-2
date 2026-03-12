@@ -13,25 +13,26 @@ const promiseTickets = fetchPromise();
 
 function App() {
   const [clickedCards,setClickedCards] = useState([])
-  const [resolvedTask,setResolvedTask] = useState([])
+  const [resolvedTasks,setResolvedTasks] = useState([])
  const removedCard = (card) =>{
     const resolvedList = clickedCards.filter(task=>task.id!==card.id)
     setClickedCards(resolvedList)
-    setResolvedTask(prev=>[...prev,card])
-    console.log(resolvedTask)
+    setResolvedTasks(prev=>[...prev,card])
+    // console.log(resolvedTasks)
  }
   return (
     <>
       <Navbar></Navbar>
       <Banner clickedCards={clickedCards}
-      resolvedTask={resolvedTask}
+      resolvedTasks={resolvedTasks}
       ></Banner>
       
        <Suspense>
         <Tickets promiseTickets={promiseTickets}
         clickedCards={clickedCards}
         setClickedCards={setClickedCards}
-        removedCard ={removedCard }></Tickets>
+        removedCard={removedCard}
+        resolvedTasks={resolvedTasks}></Tickets>
        </Suspense>
       <ToastContainer />
     </>
