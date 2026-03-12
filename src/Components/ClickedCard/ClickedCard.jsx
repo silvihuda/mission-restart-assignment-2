@@ -1,10 +1,11 @@
 import React from 'react';
 import { toast } from 'react-toastify';
 
-const ClickedCard = ({ card,removedCard  }) => {
+const ClickedCard = ({ card,removedCard,handleTicketCards }) => {
     const handleCompleteButton = () => {
           toast('This ticket is resolved')
-          removedCard(card)
+          removedCard(card);
+          handleTicketCards(card)
         
     }
     return (
@@ -14,7 +15,7 @@ const ClickedCard = ({ card,removedCard  }) => {
                     <h1 className="card-title truncate text-xl">{card.title}</h1>
 
                     <div className="card-actions">
-                        <button onClick={()=>handleCompleteButton(card)} className='btn w-full bg-green-600 rounded-xl text-white'>Complete</button>
+                        <button onClick={handleCompleteButton} className='btn w-full bg-green-600 rounded-xl text-white'>Complete</button>
                     </div>
                 </div>
             </div>

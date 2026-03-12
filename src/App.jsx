@@ -20,6 +20,7 @@ function App() {
     setResolvedTasks(prev=>[...prev,card])
     // console.log(resolvedTasks)
  }
+ 
   return (
     <>
       <Navbar></Navbar>

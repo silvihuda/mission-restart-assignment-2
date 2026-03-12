@@ -1,7 +1,7 @@
 import React from 'react';
 import ClickedCard from '../ClickedCard/ClickedCard';
 
-const TaskStatus = ({ clickedCards,removedCard }) => {
+const TaskStatus = ({ clickedCards,removedCard,handleTicketCards }) => {
     // console.log(clickedCards)
     return (
         <div>
@@ -11,7 +11,8 @@ const TaskStatus = ({ clickedCards,removedCard }) => {
                     <ClickedCard 
                     key={card.id}
                     card={card}
-                    removedCard ={removedCard }></ClickedCard>
+                    removedCard ={removedCard }
+                    handleTicketCards={handleTicketCards}></ClickedCard>
                 )
             }
         </div>
