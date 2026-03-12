@@ -5,6 +5,7 @@ import './App.css'
 import Banner from './Components/Banner/Banner'
 import Navbar from './Components/Navbar/Navbar'
 import Tickets from './Components/Tickets/Tickets'
+import Footer from './Components/Footer/Footer'
 const fetchPromise = async() =>{
   const res = await fetch('/tickets.json')
   return res.json();
@@ -35,7 +36,10 @@ function App() {
         removedCard={removedCard}
         resolvedTasks={resolvedTasks}></Tickets>
        </Suspense>
+
+        <Footer></Footer>
       <ToastContainer />
+     
     </>
   )
 }
